@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="Day12_Checkbox"/>
+    </classes>
+  </test>
+</suite>
+
+
+
+
+	
