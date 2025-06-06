@@ -45,8 +45,7 @@ public class TEDU_UpdatePassword_Test  extends CommonBase {
 	    WebElement searchInput = driver.findElement(By.name("keyword"));
 	    searchInput.sendKeys("ASP Net");
 	    searchInput.submit();
-	    Thread.sleep(2000); // nên dùng WebDriverWait thay thế
-
+	    Thread.sleep(2000); 
 	    WebElement result = driver.findElement(By.xpath("//a[contains(text(),'ASP NET')]"));
 	    assertTrue(result.isDisplayed(), "Không tìm thấy kết quả chứa 'ASP NET'");
 	}
