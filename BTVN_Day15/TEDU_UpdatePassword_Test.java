@@ -1,4 +1,5 @@
-package BTVN_Day13;
+package BTVN_Day15;
+
 import static org.testng.Assert.assertTrue;
 import automation.pageLocator.TEDU_UpdatePassword_Page;
 
@@ -51,6 +52,4 @@ public class TEDU_UpdatePassword_Test  extends CommonBase {
 	}
 }
 
-
-    
 

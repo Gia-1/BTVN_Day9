@@ -1,4 +1,4 @@
-package BTVN_Day13;
+package BTVN_Day14;
 
 import automation.pageLocator.*;
 import org.openqa.selenium.*;
@@ -78,7 +78,3 @@ public class AladaTest {
         driver.quit();
     }
 }
-
-
-
-
