@@ -11,6 +11,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.annotations.Optional;
+
+
+import org.testng.annotations.Parameters; 
+
 
 import automation.common.CommonBase;
 import automation.constant.CT_PageURL;
@@ -20,7 +25,8 @@ import automation.constant.CT_PageURL;
 public class Day16_AutomationTesting_Alert_Test extends CommonBase {
 
 	@BeforeMethod
-	public void openBrowser() {
+	@Parameters("browser")
+	public void openBrowser(@Optional("chrome")String browser) {
 	    System.out.println("BeforeMethod - openBrowser started");
 	    System.out.println("URL = " + CT_PageURL.AUTOMATIONTESTING_URL);
 	    driver = initChromeBrowser(CT_PageURL.AUTOMATIONTESTING_URL);

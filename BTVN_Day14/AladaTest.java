@@ -8,6 +8,8 @@ import org.testng.Assert;
 import java.time.Duration;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.annotations.Parameters;
+
 
 public class AladaTest {
     WebDriver driver;
@@ -16,7 +18,8 @@ public class AladaTest {
     String newPass = "matkhaumoi123";
 
     @BeforeClass
-    public void setup() {
+    @Parameters("browser")
+    public void setup(@Optional("edge")String browser) {
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
@@ -35,7 +38,7 @@ public class AladaTest {
 
     
     // 3. Đổi mật khẩu
-    @Test(priority = 2, dependsOnMethods = "loginAfterRegister")
+    @Test(priority = 2, dependsOnMethods = "registerAccount")
     public void changePassword() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement avatar = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.avatar2")));

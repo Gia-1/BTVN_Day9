@@ -6,13 +6,16 @@ import automation.pageLocator.CRMStar_Factory_page;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertTrue; 
 public class CRMStar_Factory_Test extends CommonBase {
 
     @BeforeMethod
-    public void initFireFoxBrowserTest() {
+    @Parameters("browser")
+    public void initFireFoxBrowserTest(@Optional("edge")String browser) {
         driver = initFireFoxBrowser(CT_PageURL_.CRMSTAR_URL);
     }
 

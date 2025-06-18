@@ -14,6 +14,11 @@ public class CT_PageURL {
 	public static final String SELENIUM_PRACTISE_ALERT_URL = "http://seleniumpractise.blogspot.com/2019/01/alert-demo.html";
 	public static final String ZALO_URL ="https://mediamart.vn";
 	public static final String DEMO_GURU4_URL ="https://demo.guru99.com/test/delete_customer.php";
+	public static final String ZALO_CLICK_URL ="https://dienmaynhapkhaugiare.com.vn/";
+	 public static final String ZALO_REDIRECT_URL = "https://zalo.me/0988169282";
+	 public static final String BEPANTOAN_URL = "https://bepantoan.vn/";
+	 public static final String BEPANTOAN_ZALO_REDIRECT_URL = "https://zalo.me/0912331335";
+
 	
 }
 
